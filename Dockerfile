@@ -2,6 +2,8 @@ FROM python:3.10-alpine
 
 WORKDIR /app
 
+RUN apk update && apk upgrade && apk add git
+
 COPY ./requirements.txt .
 
 RUN pip install -r requirements.txt
