@@ -6,11 +6,13 @@ from flask_bcrypt import Bcrypt
 from bson import ObjectId
 import json
 from utils.encoder import JSONEncoder
+from flask_cors import CORS
 
 # load environmets variables from `.env` file
 load_dotenv('.env')
 
 app = Flask(__name__)
+CORS(app)
 bcrypt = Bcrypt(app)
 
 app.config['MONGO_URI'] = getenv('MONGO_URI')
