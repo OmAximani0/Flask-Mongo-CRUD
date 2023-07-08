@@ -1,0 +1,21 @@
+version: '3.1'
+
+services:
+
+  mongo:
+    image: mongo
+    restart: always
+    ports:
+      - 27017
+    environment:
+      MONGO_INITDB_DATABASE: crud 
+    
+  flask:
+    image: omaximani/flask-crud
+    restart: always
+    ports:
+      - 5000:5000
+    environment:
+      - MONGO_URI=mongodb://mongo/crud
+    depends_on:
+      - mongo
