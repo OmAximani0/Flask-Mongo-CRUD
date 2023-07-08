@@ -28,7 +28,7 @@ There are 3 method you can use to setup and run the app
     ```
 - Now start the app
     ```bash
-    python3 app.py
+    flask run
     ```
 
 ### Using `docker`

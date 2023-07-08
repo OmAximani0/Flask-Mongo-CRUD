@@ -2,12 +2,18 @@ bcrypt==4.0.1
 blinker==1.6.2
 click==8.1.4
 dnspython==2.3.0
+email-validator==2.0.0.post2
 Flask==2.3.2
 Flask-Bcrypt==1.0.1
 Flask-Cors==4.0.0
+flask-mongoengine @ git+https://github.com/MongoEngine/flask-mongoengine.git@d4526139cb1e2e94111ab7de96bb629d574c1690
+Flask-WTF==1.1.1
+idna==3.4
 itsdangerous==2.1.2
 Jinja2==3.1.2
 MarkupSafe==2.1.3
+mongoengine==0.27.0
 pymongo==4.4.0
 python-dotenv==1.0.0
 Werkzeug==2.3.6
+WTForms==3.0.1
